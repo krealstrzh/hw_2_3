@@ -1,4 +1,4 @@
-public class Truck extends Car {
+public class Truck extends Transport {
 
     private String modelName;
 
@@ -6,6 +6,10 @@ public class Truck extends Car {
 
     public Truck (String modelName, int wheelsCount) {
         super(modelName, wheelsCount);
+    }
+
+    public void checkEngine() {
+        System.out.println("Проверяем двигатель");
     }
 
     public void checkTrailer() {
