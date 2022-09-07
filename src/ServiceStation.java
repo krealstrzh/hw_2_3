@@ -1,5 +1,7 @@
-import com.sun.jdi.connect.Transport;
-
-public interface ServiceStation {
-    void check();
+public class ServiceStation {
+    public void check(Transport transport) {
+        if (transport != null) {
+            transport.check();
+        }
+    }
 }

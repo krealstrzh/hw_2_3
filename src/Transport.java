@@ -1,4 +1,4 @@
-public abstract class Transport implements ServiceStation {
+public abstract class Transport {
     private String modelName;
     private int wheelsCount;
 
@@ -27,27 +27,7 @@ public abstract class Transport implements ServiceStation {
         System.out.println("Меняем покрышку");
     }
 
-    @Override
     public void check() {
-        if (this instanceof Bicycle){
-            System.out.println("Обслуживаем " + this.getModelName());
-            for (int i = 0; i < this.getWheelsCount(); i++) {
-                this.updateTyre();
-            }
-        } else if (this instanceof Car) {
-            System.out.println("Обслуживаем " + this.getModelName());
-            for (int i = 0; i < this.getWheelsCount(); i++) {
-                this.updateTyre();
-            }
-            ((Car) this).checkEngine();
-        } else if (this instanceof Truck) {
-            System.out.println("Обслуживаем " + this.getModelName());
-            for (int i = 0; i < this.getWheelsCount(); i++) {
-                this.updateTyre();
-            }
-            ((Truck) this).checkEngine();
-            ((Truck) this).checkTrailer();
-        }
-        }
 
+    }
 }
