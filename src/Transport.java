@@ -28,6 +28,6 @@ public abstract class Transport {
     }
 
     public void check() {
-
+        System.out.println("Какой вид транспорта необходимо отремонтировать?");
     }
 }
