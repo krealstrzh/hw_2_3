@@ -17,13 +17,13 @@ public class Truck extends Transport {
     }
 
     public void check() {
-        if (this instanceof Truck) {
+
             System.out.println("Обслуживаем " + this.getModelName());
             for (int i = 0; i < this.getWheelsCount(); i++) {
                 this.updateTyre();
             }
             this.checkEngine();
             this.checkTrailer();
-        }
+
     }
 }

@@ -6,11 +6,11 @@ public class Bicycle extends Transport {
         super(modelName, wheelsCount);
     }
     public void check() {
-        if (this instanceof Bicycle) {
+
             System.out.println("Обслуживаем " + this.getModelName());
             for (int i = 0; i < this.getWheelsCount(); i++) {
                 this.updateTyre();
             }
-        }
+
         }
 }
